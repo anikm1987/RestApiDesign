@@ -1,4 +1,4 @@
-Nodejs REST sample
+Nodejs REST sample using Express framework
 ----------------
 
 Sample repository to demonstrate basic functionalities. All functionalities are not implemented.
@@ -16,9 +16,10 @@ Getting Started
 1. Node is installed
 
 ### Steps
+```
 npm init
 npm run dev
-
+```
 
 ### Test your apis
 

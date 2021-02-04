@@ -31,7 +31,7 @@ Below are the list of design principles to follow while designing REST apis
 8. Cache data to improve performance
     - There are many kinds of caching solutions like Redis, in-memory caching ( apicache ), and more
  
-
+9. Versioning our APIs
 
 
 
@@ -51,4 +51,3 @@ References
 --------
 
 1. https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
-2. 
