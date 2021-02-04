@@ -30,7 +30,7 @@ npm run dev
 ```
 
 3. Test your apis
-
+```
 curl --header "Content-Type: application/json" \
   --request GET \
   --data '{"message":"Hello Aniket"}' \
@@ -44,3 +44,4 @@ curl --header "Content-Type: application/json" \
 curl "http://localhost:3000/blogs?sortBy=author&orderBy=desc"
 
 curl "http://localhost:3000/blogs?author=Aniket&limit=1&page=4"
+```
