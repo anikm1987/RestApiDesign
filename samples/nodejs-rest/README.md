@@ -11,13 +11,20 @@ Features
 
 Getting Started
 --------------
+You can create your own repository by forking this repository. Made neccessary changes according to your project name for below comand
 
+
+1. Clone the repo
+  ```
+  $ git clone https://github.com/anikm1987/RestApiDesign.git
+  $ cd RestApiDesign/samples/nodejs-rest
+  ```
 ### Pre-requisites
 1. Node is installed
 
 ### Steps
 ```
-npm init
+npm install
 npm run dev
 ```
 
