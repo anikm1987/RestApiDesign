@@ -9,26 +9,27 @@ Features
 2. Filtering, ordering and pagination for response data
 3. Use of caching using apicache
 
+
+Pre-requisites
+--------------
+1. Node is installed
+
 Getting Started
 --------------
 You can create your own repository by forking this repository. Made neccessary changes according to your project name for below comand
-
 
 1. Clone the repo
   ```
   $ git clone https://github.com/anikm1987/RestApiDesign.git
   $ cd RestApiDesign/samples/nodejs-rest
   ```
-### Pre-requisites
-1. Node is installed
-
-### Steps
+2. Steps
 ```
 npm install
 npm run dev
 ```
 
-### Test your apis
+3. Test your apis
 
 curl --header "Content-Type: application/json" \
   --request GET \
