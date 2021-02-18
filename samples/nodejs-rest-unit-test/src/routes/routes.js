@@ -48,8 +48,7 @@ router.put("/blogs/:id",(req,res)=>{
     console.log(id)
     const blogIdExist=blogs.find(b=>b.id === parseInt(id))
     if (! blogIdExist){
-        res.status(httpStatusCode.BAD_REQUEST).send({error: httpStatusCode.getReasonPhrase(httpStatusCode.BAD_REQUEST)
-    });
+        res.json(req.body);
     }
     // update blog based on id
     res.json(req.body)
@@ -58,8 +57,14 @@ router.put("/blogs/:id",(req,res)=>{
 router.delete("/blogs/:id",(req,res)=>{
     const {id}=req.params
     console.log(id)
+    const blogIdExist=blogs.find(b=>b.id === parseInt(id))
+    
+
     // delete blog based on id
-    res.json(req.body)
+    if (! blogIdExist){
+        res.status(httpStatusCode.BAD_REQUEST).send({error: httpStatusCode.getReasonPhrase(httpStatusCode.BAD_REQUEST)});
+    }
+    res.json(blogs.filter(b=>b.id === parseInt(id)));
 });
 
 router.get("/blogs/:id/comments",(req,res)=>{

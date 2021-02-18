@@ -23,8 +23,31 @@ test('/blogs get - return first 5 records',async done=>{
     done()
 })
 
-test('/blogs get - return first 5 records',async done=>{
+test('/blogs get - return 2nd page 3 records',async done=>{
     const { body } = await request.get("/blogs?limit=3&page=2");
     expect(body.length).toBeLessThanOrEqual(5)
+    done()
+})
+
+
+test('/blogs post - create new record',async done=>{
+    const blog={ id: 129, title:"Sample Blog 7", author:"Aniket" }
+    const { body } = await request.post("/blogs").send(blog);
+    expect(body).toEqual({ id: 129, title:"Sample Blog 7", author:"Aniket" })
+    done()
+})
+
+
+test('/blogs put - put new record',async done=>{
+    const blog={ id: 129, title:"Sample Blog 8", author:"Aniket" }
+    const { body } = await request.put("/blogs/129").send(blog);
+    expect(body).toEqual({ id: 129, title:"Sample Blog 8", author:"Aniket" })
+    done()
+})
+
+
+test('/blogs delete - data based on record id',async done=>{
+    const { body } = await request.delete("/blogs/123");
+    expect(body).toEqual([{ id: 123, title:"Sample Blog 1", author:"Aniket" }])
     done()
 })
