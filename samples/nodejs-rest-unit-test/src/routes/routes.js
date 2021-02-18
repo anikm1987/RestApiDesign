@@ -58,8 +58,6 @@ router.delete("/blogs/:id",(req,res)=>{
     const {id}=req.params
     console.log(id)
     const blogIdExist=blogs.find(b=>b.id === parseInt(id))
-    
-
     // delete blog based on id
     if (! blogIdExist){
         res.status(httpStatusCode.BAD_REQUEST).send({error: httpStatusCode.getReasonPhrase(httpStatusCode.BAD_REQUEST)});
