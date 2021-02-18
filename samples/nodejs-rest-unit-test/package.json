@@ -42,9 +42,9 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cd samples/nodejs-rest-unit-test && pretty-quick --staged",
+      "pre-commit": "pretty-quick --staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "samples/nodejs-rest-unit-test && npm run test"
+      "pre-push": "npm run test"
     }
   }
 }
