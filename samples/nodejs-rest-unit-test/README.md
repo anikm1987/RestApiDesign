@@ -74,4 +74,5 @@ Linting and commitzen
 ----------------------
 npm install husky --save-dev
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
+npm install lint-staged --save-dev
 npm install prettier --save-dev
