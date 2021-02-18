@@ -76,4 +76,4 @@ npm install husky --save-dev
 npm i -D husky pretty-quick
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
 npm install lint-staged --save-dev
-npm install prettier --save-dev
+npm install prettier --save-dev 
