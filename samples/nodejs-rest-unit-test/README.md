@@ -73,6 +73,7 @@ Unit testing is the implementation of TDD to individual function or unit of an a
 Linting and commitzen
 ----------------------
 npm install husky --save-dev
+npm i -D husky pretty-quick
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
 npm install lint-staged --save-dev
 npm install prettier --save-dev
