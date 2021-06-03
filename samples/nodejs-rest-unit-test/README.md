@@ -67,13 +67,7 @@ Unit testing is the implementation of TDD to individual function or unit of an a
   - files named with test.js (like app.test.js)
   - files named with spec.js (like app.spec.js)
 
-5. npm run test
+5. npm run test:watch
 
 
-Linting and commitzen
-----------------------
-npm install husky --save-dev
-npm i -D husky pretty-quick
-npm install --save-dev @commitlint/config-conventional @commitlint/cli
-npm install lint-staged --save-dev
-npm install prettier --save-dev 
+

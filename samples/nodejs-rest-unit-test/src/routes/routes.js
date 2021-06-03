@@ -71,6 +71,15 @@ router.get("/blogs/:id/comments",(req,res)=>{
     res.json(comments)
 });
 
+router.get("/fizzbuzz",(req,res)=>{
+    const { number }=req.query;
+    if (number % 15 == 0) res.json({message: 'FizzBuzz'});
+    else if (number % 3 == 0) res.json({message: 'Fizz'});
+    else if (number % 5 == 0) res.json({message: 'Buzz'});
+    else res.json({message: number});
+     
+});
+
 
 //Comparer Function    
 function getSortedValue(attribute) {    
